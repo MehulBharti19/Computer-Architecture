@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/posit_loss_project/verilog/tb_all_losses.v,1776693768,verilog,,,,tb_all_losses,,,../../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/vivado/vivado_build/posit_loss_project.sim/sim_1/synth/func/xsim/tb_all_losses_func_synth.v,1776710868,verilog,,C:/posit_loss_project/verilog/tb_all_losses.v,,fsm_ce_grad_logit;fsm_ce_loss;fsm_mse_grad;fsm_mse_loss;glbl;q16_neglog_lut;q16_to_posit8_fsm;q16_to_posit8_fsm_0;q16_to_posit8_fsm_1;q16_to_posit8_fsm_2;top_wrapper,,,../../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,

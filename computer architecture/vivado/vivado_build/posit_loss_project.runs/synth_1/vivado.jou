@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Apr 20 19:33:17 2026
+# Process ID         : 29088
+# Current directory  : C:/posit_loss_project/vivado/vivado_build/posit_loss_project.runs/synth_1
+# Command line       : vivado.exe -log top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+# Log file           : C:/posit_loss_project/vivado/vivado_build/posit_loss_project.runs/synth_1/top_wrapper.vds
+# Journal file       : C:/posit_loss_project/vivado/vivado_build/posit_loss_project.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-SU6IC0U7
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 2
+# CPU Logical cores  : 4
+# Host memory        : 16806 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27543 MB
+# Available Virtual  : 6427 MB
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace

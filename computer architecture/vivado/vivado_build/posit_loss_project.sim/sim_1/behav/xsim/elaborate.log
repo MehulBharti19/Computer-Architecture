@@ -1,0 +1,37 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_all_losses_behav xil_defaultlib.tb_all_losses xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/fsm_mse_loss.v" Line 1. Module fsm_mse_loss doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/posit8_to_q16.v" Line 1. Module posit8_to_q16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/posit8_to_q16.v" Line 1. Module posit8_to_q16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/q16_to_posit8_fsm.v" Line 1. Module q16_to_posit8_fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/fsm_mse_grad.v" Line 1. Module fsm_mse_grad doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/posit8_to_q16.v" Line 1. Module posit8_to_q16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/posit8_to_q16.v" Line 1. Module posit8_to_q16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/q16_to_posit8_fsm.v" Line 1. Module q16_to_posit8_fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/fsm_ce_loss.v" Line 1. Module fsm_ce_loss doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/posit8_to_q16.v" Line 1. Module posit8_to_q16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/q16_neglog_lut.v" Line 1. Module q16_neglog_lut doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/q16_to_posit8_fsm.v" Line 1. Module q16_to_posit8_fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/fsm_ce_grad_logit.v" Line 1. Module fsm_ce_grad_logit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/posit8_to_q16.v" Line 1. Module posit8_to_q16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/posit_loss_project/verilog/q16_to_posit8_fsm.v" Line 1. Module q16_to_posit8_fsm doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.posit8_to_q16
+Compiling module xil_defaultlib.q16_to_posit8_fsm
+Compiling module xil_defaultlib.fsm_mse_loss
+Compiling module xil_defaultlib.fsm_mse_grad
+Compiling module xil_defaultlib.q16_neglog_lut
+Compiling module xil_defaultlib.fsm_ce_loss
+Compiling module xil_defaultlib.fsm_ce_grad_logit
+Compiling module xil_defaultlib.top_wrapper
+Compiling module xil_defaultlib.tb_all_losses
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_all_losses_behav

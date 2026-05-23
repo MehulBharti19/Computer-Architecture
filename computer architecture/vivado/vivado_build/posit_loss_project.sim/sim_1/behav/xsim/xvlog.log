@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/fsm_ce_grad_logit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_ce_grad_logit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/fsm_ce_loss.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_ce_loss
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/fsm_mse_grad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_mse_grad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/fsm_mse_loss.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_mse_loss
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/posit8_to_q16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module posit8_to_q16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/q16_neglog_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module q16_neglog_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/q16_to_posit8_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module q16_to_posit8_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/top_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/verilog/tb_all_losses.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_all_losses
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/posit_loss_project/vivado/vivado_build/posit_loss_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

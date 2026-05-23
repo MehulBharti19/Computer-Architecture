@@ -1,0 +1,373 @@
+
+*** Running vivado
+    with args -log top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Apr 20 19:33:17 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 529.965 ; gain = 222.812
+Command: read_checkpoint -auto_incremental -incremental C:/posit_loss_project/vivado/vivado_build/posit_loss_project.srcs/utils_1/imports/synth_1/fsm_mse_loss.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/posit_loss_project/vivado/vivado_build/posit_loss_project.srcs/utils_1/imports/synth_1/fsm_mse_loss.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_wrapper -part xc7z030ffg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Device 21-403] Loading part xc7z030ffg676-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26080
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.719 ; gain = 541.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_wrapper' [C:/posit_loss_project/verilog/top_wrapper.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fsm_mse_loss' [C:/posit_loss_project/verilog/fsm_mse_loss.v:1]
+INFO: [Synth 8-6157] synthesizing module 'posit8_to_q16' [C:/posit_loss_project/verilog/posit8_to_q16.v:1]
+INFO: [Synth 8-226] default block is never used [C:/posit_loss_project/verilog/posit8_to_q16.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'posit8_to_q16' (0#1) [C:/posit_loss_project/verilog/posit8_to_q16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'q16_to_posit8_fsm' [C:/posit_loss_project/verilog/q16_to_posit8_fsm.v:1]
+INFO: [Synth 8-226] default block is never used [C:/posit_loss_project/verilog/q16_to_posit8_fsm.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'q16_to_posit8_fsm' (0#1) [C:/posit_loss_project/verilog/q16_to_posit8_fsm.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_mse_loss' (0#1) [C:/posit_loss_project/verilog/fsm_mse_loss.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm_mse_grad' [C:/posit_loss_project/verilog/fsm_mse_grad.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_mse_grad' (0#1) [C:/posit_loss_project/verilog/fsm_mse_grad.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm_ce_loss' [C:/posit_loss_project/verilog/fsm_ce_loss.v:1]
+INFO: [Synth 8-6157] synthesizing module 'q16_neglog_lut' [C:/posit_loss_project/verilog/q16_neglog_lut.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'q16_neglog_lut' (0#1) [C:/posit_loss_project/verilog/q16_neglog_lut.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_ce_loss' (0#1) [C:/posit_loss_project/verilog/fsm_ce_loss.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm_ce_grad_logit' [C:/posit_loss_project/verilog/fsm_ce_grad_logit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_ce_grad_logit' (0#1) [C:/posit_loss_project/verilog/fsm_ce_grad_logit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_wrapper' (0#1) [C:/posit_loss_project/verilog/top_wrapper.v:2]
+WARNING: [Synth 8-6014] Unused sequential element best_q_reg was removed.  [C:/posit_loss_project/verilog/q16_to_posit8_fsm.v:43]
+WARNING: [Synth 8-6014] Unused sequential element p_clamped_q_reg was removed.  [C:/posit_loss_project/verilog/fsm_ce_grad_logit.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1446.082 ; gain = 666.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1446.082 ; gain = 666.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1446.082 ; gain = 666.281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1446.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/posit_loss_project/vivado/top_clock.xdc]
+Finished Parsing XDC File [C:/posit_loss_project/vivado/top_clock.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1513.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1513.438 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1513.438 ; gain = 733.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030ffg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1513.438 ; gain = 733.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1513.438 ; gain = 733.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'q16_to_posit8_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_mse_loss'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_mse_grad'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_ce_loss'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_ce_grad_logit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00001 |                              000
+                  S_INIT |                            00010 |                              001
+                 S_CHECK |                            00100 |                              010
+                  S_NEXT |                            01000 |                              011
+                   S_FIN |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'q16_to_posit8_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                S_DECODE |                              001 |                             0001
+                S_SQUARE |                              010 |                             0010
+                 S_SCALE |                              011 |                             0011
+             S_ENC_START |                              100 |                             0100
+              S_ENC_WAIT |                              101 |                             0101
+                  S_DONE |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_mse_loss'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+               S_COMPUTE |                              001 |                              001
+             S_ENC_START |                              010 |                              010
+              S_ENC_WAIT |                              011 |                              011
+                  S_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_mse_grad'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                 S_CLAMP |                              001 |                             0001
+                S_SELECT |                              010 |                             0010
+                   S_LOG |                              011 |                             0011
+             S_ENC_START |                              100 |                             0100
+              S_ENC_WAIT |                              101 |                             0101
+                  S_DONE |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_ce_loss'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+               S_COMPUTE |                              001 |                              001
+             S_ENC_START |                              010 |                              010
+              S_ENC_WAIT |                              011 |                              011
+                  S_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_ce_grad_logit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1513.438 ; gain = 733.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	                8 Bit    Registers := 24    
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 15    
+	   5 Input   16 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 8     
+	   5 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 38    
+	   7 Input    1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP prod_q0, operation Mode is: A*B.
+DSP Report: operator prod_q0 is absorbed into DSP prod_q0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1530.465 ; gain = 750.664
+---------------------------------------------------------------------------------
+ Sort Area is  prod_q0_0 : 0 0 : 1937 1937 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------+-----------------+---------------+----------------+
+|Module Name       | RTL Object      | Depth x Width | Implemented As | 
++------------------+-----------------+---------------+----------------+
+|posit8_to_q16     | q_out           | 256x16        | LUT            | 
+|q16_to_posit8_fsm | cand_code       | 256x8         | LUT            | 
+|q16_to_posit8_fsm | cand_q          | 256x16        | LUT            | 
+|q16_neglog_lut    | q_out0          | 512x16        | LUT            | 
+|fsm_mse_loss      | u_enc/cand_q    | 256x16        | LUT            | 
+|fsm_mse_loss      | u_dec1/q_out    | 256x16        | LUT            | 
+|fsm_mse_loss      | u_dec0/q_out    | 256x16        | LUT            | 
+|fsm_mse_loss      | u_enc/cand_code | 256x8         | LUT            | 
+|fsm_mse_grad      | u_enc/cand_q    | 256x16        | LUT            | 
+|fsm_mse_grad      | u_dec1/q_out    | 256x16        | LUT            | 
+|fsm_mse_grad      | u_dec0/q_out    | 256x16        | LUT            | 
+|fsm_mse_grad      | u_enc/cand_code | 256x8         | LUT            | 
+|fsm_ce_loss       | u_enc/cand_q    | 256x16        | LUT            | 
+|fsm_ce_loss       | u_dec0/q_out    | 256x16        | LUT            | 
+|fsm_ce_loss       | u_log/q_out0    | 512x16        | LUT            | 
+|fsm_ce_loss       | u_enc/cand_code | 256x8         | LUT            | 
+|fsm_ce_grad_logit | u_enc/cand_q    | 256x16        | LUT            | 
+|fsm_ce_grad_logit | u_dec0/q_out    | 256x16        | LUT            | 
+|fsm_ce_grad_logit | u_enc/cand_code | 256x8         | LUT            | 
++------------------+-----------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fsm_mse_loss | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1702.902 ; gain = 923.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1734.383 ; gain = 954.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1734.383 ; gain = 954.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fsm_mse_loss | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    69|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |    69|
+|5     |LUT2    |   116|
+|6     |LUT3    |   152|
+|7     |LUT4    |    75|
+|8     |LUT5    |   149|
+|9     |LUT6    |   416|
+|10    |MUXF7   |    28|
+|11    |FDCE    |   346|
+|12    |FDPE    |    66|
+|13    |IBUF    |    29|
+|14    |OBUF    |    36|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1962.871 ; gain = 1115.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1962.871 ; gain = 1183.070
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1972.023 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1976.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f0ca5c31
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1976.676 ; gain = 1440.512
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1976.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/posit_loss_project/vivado/vivado_build/posit_loss_project.runs/synth_1/top_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_wrapper_utilization_synth.rpt -pb top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 19:34:18 2026...

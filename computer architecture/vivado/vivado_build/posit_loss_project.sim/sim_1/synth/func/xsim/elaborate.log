@@ -1,0 +1,41 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_all_losses_func_synth xil_defaultlib.tb_all_losses xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.FDPE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.q16_to_posit8_fsm_2
+Compiling module xil_defaultlib.fsm_mse_loss
+Compiling module xil_defaultlib.q16_to_posit8_fsm_1
+Compiling module xil_defaultlib.fsm_mse_grad
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.q16_to_posit8_fsm_0
+Compiling module xil_defaultlib.q16_neglog_lut
+Compiling module xil_defaultlib.fsm_ce_loss
+Compiling module xil_defaultlib.q16_to_posit8_fsm
+Compiling module xil_defaultlib.fsm_ce_grad_logit
+Compiling module xil_defaultlib.top_wrapper
+Compiling module xil_defaultlib.tb_all_losses
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_all_losses_func_synth

@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+==== FULL SYSTEM TEST ====
+MSE Loss: 0x18 | MSE Grad: 0x30
+CE Loss:  0x36 | CE Grad:  0xd0
+$finish called at time : 10740127 ps : File "C:/posit_loss_project/verilog/tb_all_losses.v" Line 48

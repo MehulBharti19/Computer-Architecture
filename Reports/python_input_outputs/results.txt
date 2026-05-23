@@ -1,0 +1,136 @@
+MSE_LOSS case 1: y_hat=0.2500, y_true=0.0000
+  ref posit=0x0C value=0.031250
+  hw  posit=0x0C value=0.031250
+  abs error=0.000000
+MSE_LOSS case 2: y_hat=0.2500, y_true=0.5000
+  ref posit=0x0C value=0.031250
+  hw  posit=0x0C value=0.031250
+  abs error=0.000000
+MSE_LOSS case 3: y_hat=0.2500, y_true=1.0000
+  ref posit=0x22 value=0.281250
+  hw  posit=0x22 value=0.281250
+  abs error=0.000000
+MSE_LOSS case 4: y_hat=0.2500, y_true=1.5000
+  ref posit=0x39 value=0.781250
+  hw  posit=0x39 value=0.781250
+  abs error=0.000000
+MSE_LOSS case 5: y_hat=0.5000, y_true=0.0000
+  ref posit=0x18 value=0.125000
+  hw  posit=0x18 value=0.125000
+  abs error=0.000000
+MSE_LOSS case 6: y_hat=0.5000, y_true=0.5000
+  ref posit=0x00 value=0.000000
+  hw  posit=0x00 value=0.000000
+  abs error=0.000000
+MSE_LOSS case 7: y_hat=0.5000, y_true=1.0000
+  ref posit=0x18 value=0.125000
+  hw  posit=0x18 value=0.125000
+  abs error=0.000000
+MSE_LOSS case 8: y_hat=0.5000, y_true=1.5000
+  ref posit=0x30 value=0.500000
+  hw  posit=0x30 value=0.500000
+  abs error=0.000000
+MSE_LOSS: total_cases=32 max_abs_error=0.000244 avg_abs_error=0.000008
+
+MSE_GRAD case 1: y_hat=0.2500, y_true=0.0000
+  ref posit=0x20 value=0.250000
+  hw  posit=0x20 value=0.250000
+  abs error=0.000000
+MSE_GRAD case 2: y_hat=0.2500, y_true=0.5000
+  ref posit=0xE0 value=-0.250000
+  hw  posit=0xE0 value=-0.250000
+  abs error=0.000000
+MSE_GRAD case 3: y_hat=0.2500, y_true=1.0000
+  ref posit=0xC8 value=-0.750000
+  hw  posit=0xC8 value=-0.750000
+  abs error=0.000000
+MSE_GRAD case 4: y_hat=0.2500, y_true=1.5000
+  ref posit=0xBC value=-1.250000
+  hw  posit=0xBC value=-1.250000
+  abs error=0.000000
+MSE_GRAD case 5: y_hat=0.5000, y_true=0.0000
+  ref posit=0x30 value=0.500000
+  hw  posit=0x30 value=0.500000
+  abs error=0.000000
+MSE_GRAD case 6: y_hat=0.5000, y_true=0.5000
+  ref posit=0x00 value=0.000000
+  hw  posit=0x00 value=0.000000
+  abs error=0.000000
+MSE_GRAD case 7: y_hat=0.5000, y_true=1.0000
+  ref posit=0xD0 value=-0.500000
+  hw  posit=0xD0 value=-0.500000
+  abs error=0.000000
+MSE_GRAD case 8: y_hat=0.5000, y_true=1.5000
+  ref posit=0xC0 value=-1.000000
+  hw  posit=0xC0 value=-1.000000
+  abs error=0.000000
+MSE_GRAD: total_cases=32 max_abs_error=0.000000 avg_abs_error=0.000000
+
+CE_LOSS case 1: p_hat=0.000244, label=0
+  ref posit=0x01 value=0.000244
+  hw  posit=0x04 value=0.003906
+  abs error=0.003662
+CE_LOSS case 2: p_hat=0.000244, label=1
+  ref posit=0x68 value=8.317766
+  hw  posit=0x68 value=7.999756
+  abs error=0.318010
+CE_LOSS case 3: p_hat=0.062500, label=0
+  ref posit=0x10 value=0.064539
+  hw  posit=0x10 value=0.064453
+  abs error=0.000085
+CE_LOSS case 4: p_hat=0.062500, label=1
+  ref posit=0x56 value=2.772589
+  hw  posit=0x56 value=2.772705
+  abs error=0.000116
+CE_LOSS case 5: p_hat=0.250000, label=0
+  ref posit=0x22 value=0.287682
+  hw  posit=0x22 value=0.287598
+  abs error=0.000084
+CE_LOSS case 6: p_hat=0.250000, label=1
+  ref posit=0x46 value=1.386294
+  hw  posit=0x46 value=1.386230
+  abs error=0.000064
+CE_LOSS case 7: p_hat=0.375000, label=0
+  ref posit=0x2E value=0.470004
+  hw  posit=0x2E value=0.469971
+  abs error=0.000033
+CE_LOSS case 8: p_hat=0.375000, label=1
+  ref posit=0x3F value=0.980829
+  hw  posit=0x3F value=0.980713
+  abs error=0.000116
+CE_LOSS: total_cases=14 max_abs_error=0.318010 avg_abs_error=0.045742
+
+CE_GRAD_LOGIT case 1: p_hat=0.000000, label=0
+  ref posit=0x00 value=0.000000
+  hw  posit=0x00 value=0.000000
+  abs error=0.000000
+CE_GRAD_LOGIT case 2: p_hat=0.000000, label=1
+  ref posit=0xC0 value=-1.000000
+  hw  posit=0xC0 value=-1.000000
+  abs error=0.000000
+CE_GRAD_LOGIT case 3: p_hat=0.062500, label=0
+  ref posit=0x10 value=0.062500
+  hw  posit=0x10 value=0.062500
+  abs error=0.000000
+CE_GRAD_LOGIT case 4: p_hat=0.062500, label=1
+  ref posit=0xC2 value=-0.937500
+  hw  posit=0xC2 value=-0.937500
+  abs error=0.000000
+CE_GRAD_LOGIT case 5: p_hat=0.250000, label=0
+  ref posit=0x20 value=0.250000
+  hw  posit=0x20 value=0.250000
+  abs error=0.000000
+CE_GRAD_LOGIT case 6: p_hat=0.250000, label=1
+  ref posit=0xC8 value=-0.750000
+  hw  posit=0xC8 value=-0.750000
+  abs error=0.000000
+CE_GRAD_LOGIT case 7: p_hat=0.375000, label=0
+  ref posit=0x28 value=0.375000
+  hw  posit=0x28 value=0.375000
+  abs error=0.000000
+CE_GRAD_LOGIT case 8: p_hat=0.375000, label=1
+  ref posit=0xCC value=-0.625000
+  hw  posit=0xCC value=-0.625000
+  abs error=0.000000
+CE_GRAD_LOGIT: total_cases=14 max_abs_error=0.000000 avg_abs_error=0.000000
+

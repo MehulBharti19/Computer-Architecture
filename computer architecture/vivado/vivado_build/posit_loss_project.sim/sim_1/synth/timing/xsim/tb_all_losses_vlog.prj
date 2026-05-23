@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../../../../generated" --include "D:/2025.2/Vivado/data/rsb/busdef" \
+"tb_all_losses_time_synth.v" \
+"../../../../../../../verilog/tb_all_losses.v" \
+
+# Do not sort compile order
+nosort

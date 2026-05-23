@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/posit_loss_project/generated/neglog_q16_lut.vh,1776687886,verilog,,,,,,,,,,,,
+C:/posit_loss_project/generated/posit8_to_q16_case.vh,1776687886,verilog,,,,,,,,,,,,
+C:/posit_loss_project/generated/q16_to_posit_rom.vh,1776687886,verilog,,,,,,,,,,,,
+C:/posit_loss_project/verilog/fsm_ce_grad_logit.v,1776675130,verilog,,C:/posit_loss_project/verilog/fsm_ce_loss.v,,fsm_ce_grad_logit,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/fsm_ce_loss.v,1776675130,verilog,,C:/posit_loss_project/verilog/fsm_mse_grad.v,,fsm_ce_loss,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/fsm_mse_grad.v,1776675130,verilog,,C:/posit_loss_project/verilog/fsm_mse_loss.v,,fsm_mse_grad,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/fsm_mse_loss.v,1776675130,verilog,,C:/posit_loss_project/verilog/posit8_to_q16.v,,fsm_mse_loss,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/posit8_to_q16.v,1776675130,verilog,,C:/posit_loss_project/verilog/q16_neglog_lut.v,C:/posit_loss_project/generated/posit8_to_q16_case.vh,posit8_to_q16,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/q16_neglog_lut.v,1776675130,verilog,,C:/posit_loss_project/verilog/q16_to_posit8_fsm.v,C:/posit_loss_project/generated/neglog_q16_lut.vh,q16_neglog_lut,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/q16_to_posit8_fsm.v,1776675130,verilog,,C:/posit_loss_project/verilog/top_wrapper.v,C:/posit_loss_project/generated/q16_to_posit_rom.vh,q16_to_posit8_fsm,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/tb_all_losses.v,1776693768,verilog,,,,tb_all_losses,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/verilog/top_wrapper.v,1776693749,verilog,,C:/posit_loss_project/verilog/tb_all_losses.v,,top_wrapper,,,../../../../../../generated;D:/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/posit_loss_project/vivado/vivado_build/posit_loss_project.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,

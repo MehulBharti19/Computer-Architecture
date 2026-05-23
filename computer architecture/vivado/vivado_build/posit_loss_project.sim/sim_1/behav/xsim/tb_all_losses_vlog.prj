@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../../../generated" --include "D:/2025.2/Vivado/data/rsb/busdef" \
+"../../../../../../verilog/fsm_ce_grad_logit.v" \
+"../../../../../../verilog/fsm_ce_loss.v" \
+"../../../../../../verilog/fsm_mse_grad.v" \
+"../../../../../../verilog/fsm_mse_loss.v" \
+"../../../../../../verilog/posit8_to_q16.v" \
+"../../../../../../verilog/q16_neglog_lut.v" \
+"../../../../../../verilog/q16_to_posit8_fsm.v" \
+"../../../../../../verilog/top_wrapper.v" \
+"../../../../../../verilog/tb_all_losses.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
